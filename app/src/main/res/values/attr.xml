@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="dark_theme">
+        <attr name="primaryColor" format="color"/>
+        <attr name="secondaryColor" format="color"/>
+        <attr name="tertiaryColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="surfaceColor" format="color"/>
+        <attr name="onPrimaryColor" format="color"/>
+        <attr name="onSecondaryColor" format="color"/>
+        <attr name="onTertiaryColor" format="color"/>
+        <attr name="onBackgroundColor" format="color"/>
+        <attr name="onSurfaceColor" format="color"/>
+    </declare-styleable>
+</resources>
