@@ -7,6 +7,7 @@ import com.humay.movies.data.local.MoviesDatabase
 import com.humay.movies.data.remote.MoviesApi
 import com.humay.movies.data.repository.MoviesRepositoryImpl
 import com.humay.movies.domain.repository.MoviesRepository
+import com.humay.movies.domain.use_case.GetMovieDetailsUseCase
 import com.humay.movies.domain.use_case.GetPopularMoviesUseCase
 import com.humay.movies.domain.use_case.SearchMoviesUseCase
 import com.humay.movies.util.Constants
@@ -67,4 +68,10 @@ object AppModule {
     fun provideSearchMoviesUseCase(
         repo: MoviesRepository
     ) = SearchMoviesUseCase(repo)
+
+    @Provides
+    @Singleton
+    fun provideGetMovieDetailsUseCase(
+        repo: MoviesRepository
+    ) = GetMovieDetailsUseCase(repo)
 }

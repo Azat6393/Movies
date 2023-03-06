@@ -1,5 +1,6 @@
 package com.humay.movies.data.remote
 
+import com.humay.movies.data.remote.dto.GenreDto
 import com.humay.movies.data.remote.dto.MovieDetailsDto
 import com.humay.movies.data.remote.dto.MoviesDto
 import retrofit2.http.GET
@@ -29,4 +30,10 @@ interface MoviesApi {
         @Query("api_key") apiKey: String,
         @Query("language") language: String
     ): MovieDetailsDto
+
+    @GET("genre/movie/list")
+    suspend fun getGenreList(
+        @Query("api_key") apiKey: String,
+        @Query("language") language: String
+    ): List<GenreDto>
 }

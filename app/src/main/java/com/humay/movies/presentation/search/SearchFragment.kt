@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.humay.movies.R
 import com.humay.movies.databinding.FragmentSearchBinding
@@ -74,6 +75,8 @@ class SearchFragment : Fragment(R.layout.fragment_search), SearchMovieAdapter.On
 
 
     override fun onClick(movie: Movie) {
-
+        val action =
+            SearchFragmentDirections.actionSearchFragmentToMovieDetailsFragment(movieId = movie.id!!)
+        findNavController().navigate(action)
     }
 }

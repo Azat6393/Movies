@@ -1,10 +1,10 @@
-package com.humay.movies.data.remote.dto
+package com.humay.movies.domain.model
 
-data class MovieDetailsDto(
+data class MovieDetails(
     val adult: Boolean,
     val backdrop_path: String,
     val budget: Int,
-    val genres: List<GenreDto>,
+    val genres: String,
     val homepage: String,
     val id: Int,
     val imdb_id: String,

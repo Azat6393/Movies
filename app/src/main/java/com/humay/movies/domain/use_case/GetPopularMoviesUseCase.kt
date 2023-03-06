@@ -15,6 +15,7 @@ class GetPopularMoviesUseCase @Inject constructor(
 ) {
     operator fun invoke(page: Int): Flow<Resource<List<Movie>>> = flow {
         try {
+            emit(Resource.Loading())
             val apiResponse = repo.getPopularMoviesFromApi(page)
             val movies = apiResponse?.results?.map { it.toMoviesEntity() }
             if (movies != null) {
