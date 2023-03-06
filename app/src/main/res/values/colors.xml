@@ -17,7 +17,7 @@
     <color name="darkOnPrimaryColor">#FF0C3900</color>
     <color name="darkOnSecondaryColor">#FF273420</color>
     <color name="darkOnTertiaryColor">#FF003738</color>
-    <color name="darkOnBackgroundColor">#FFE0E4D7</color>
+    <color name="darkOnBackgroundColor">#FF191C18</color>
     <color name="darkOnSurfaceColor">#FFC4C9BC</color>
 
     <color name="lightPrimaryColor">#FF386A20</color>
@@ -28,7 +28,7 @@
     <color name="lightOnPrimaryColor">#FFFFFFFF</color>
     <color name="lightOnSecondaryColor">#FFFFFFFF</color>
     <color name="lightOnTertiaryColor">#FFFFFFFF</color>
-    <color name="lightOnBackgroundColor">#FF191C18</color>
+    <color name="lightOnBackgroundColor">#FFE0E4D7</color>
     <color name="lightOnSurfaceColor">#FF43483E</color>
 
 </resources>
